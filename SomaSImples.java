@@ -8,7 +8,7 @@ public class SomaSImples {
         int a = scanner.nextInt();
 
         System.out.print("Digite o segundo número inteiro: ");
-        int b = scanner.nexInt();
+        int b = scanner.nextInt();
 
         int soma = a + b;
         System.out.println("A soma é: " + soma);
