@@ -14,7 +14,7 @@ public class PositivoNegZero {
         } else {
             System.out.println("O número é zero.");
         }
-        }
-        }
+        
+        scanner.close();
     }
 }
