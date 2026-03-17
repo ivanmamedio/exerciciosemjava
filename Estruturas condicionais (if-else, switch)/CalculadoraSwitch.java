@@ -16,6 +16,30 @@ public class CalculadoraSwitch {
         double resultado;
         boolean operacaoValida = true;
 
-        switch (operador) {}
+        switch (operador) {
+            case '+':
+                resultado = num1 + num2;
+                System.out.println("Resultado: " + resultado);
+                break;
+            case '-':
+                resultado = num1 - num2;
+                System.out.println("Resultado: " + resultado);
+                break;
+            case '*':
+                resultado = num1 * num2;
+                System.out.println("Resultado: " + resultado);
+                break;
+            case '/':
+                if (num2 != 0) {
+                    resultado = num1 / num2;
+                    System.out.println("Resultado: " + resultado);
+                } else {
+                    System.out.println("Erro: divisão por zero!");
+                }
+                break;
+            default:
+                System.out.println("Operador inválido!");
+        }
+        scanner.close();
     }
 }
