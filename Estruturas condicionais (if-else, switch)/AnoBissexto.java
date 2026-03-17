@@ -7,7 +7,7 @@ public class AnoBissexto {
         System.out.print("Digite um ano: ");
         int ano = scanner.nextInt();
 
-        boolean bissexto = (ano % 400 == 0) || (ano % 4 == 0 && ano & 100 != 0);
+        boolean bissexto = (ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0);
 
         if (bissexto) {
             System.out.println(ano + " é um ano bissexto.");
