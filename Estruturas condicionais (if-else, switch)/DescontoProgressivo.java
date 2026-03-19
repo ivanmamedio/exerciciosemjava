@@ -22,6 +22,12 @@ public class DescontoProgressivo {
         }
 
         double valorDesconto = precoTotal * desconto;
-        }
+        double precoFinal = precoTotal - valorDesconto;
+
+        System.out.printf("Preço total sem desconto: R$ %.2f%n", precoTotal);
+        System.out.printf("Desconto aplicado: R$ %.2f (%d%%)%n", valorDesconto, (int)(desconto * 100));
+        System.out.printf("Preço final: R$ %.2f%n", precoFinal);
+ 
+       scanner.close();
     }
 }
