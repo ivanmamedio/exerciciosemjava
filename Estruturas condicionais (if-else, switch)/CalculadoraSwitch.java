@@ -14,8 +14,6 @@ public class CalculadoraSwitch {
         char operador = scanner.next().charAt(0);
 
         double resultado;
-        boolean operacaoValida = true;
-
         switch (operador) {
             case '+':
                 resultado = num1 + num2;
