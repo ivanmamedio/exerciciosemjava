@@ -23,7 +23,7 @@ public class MenuOpcoes {
                     break;
                 case 2:
                     LocalDate hoje = LocalDate.now();
-                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy");
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
                     System.out.println("Data atual: " + hoje.format(formatter));
                     break;
                 case 3:
