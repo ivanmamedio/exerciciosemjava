@@ -17,7 +17,23 @@ public class MenuOpcoes {
             opcao = scanner.nextInt();
             scanner.nextLine(); // limpar o buffer
             
+            switch (opcao) {
+                case 1:
+                    System.out.println("Olá! Seja bem-vindo!");
+                    break;
+                case 2:
+                    LocalDate hoje = LocalDate.now();
+                    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy");
+                    System.out.println("Data atual: " + hoje.format(formatter));
+                    break;
+                case 3:
+                    System.out.println("Encerrando o programa....");
+                    break;
+                default:
+                    System.out.println("Opção inválida! Tente novamente,");
+            }
+        } while (opcao != 3);
 
-            
+            scanner.close();
     }
 }
