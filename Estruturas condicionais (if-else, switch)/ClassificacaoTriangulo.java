@@ -17,8 +17,14 @@ public class ClassificacaoTriangulo {
         if (a + b > c && a + c > b && b + c > a) {
             if (a == b && b ==c) {
                 System.out.println("Triângulo Equilátero");
-            } else if (a == b || a ==)
+            } else if (a == b || a == c || b == c) {
+                System.out.println("Triângulo Isósceles");
+            } else {
+                System.out.println("Triângulo Escaleno");
             }
+        } else {
+            System.out.println("Os valores não formam um triângulo.");
         }
+        scanner.close();
     }
 }
