@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class Fibonacci {
-    public static void main(String[] args {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Quantos termos da sequência de Fibonacci deseja?");
         int n = scanner.nextInt();
 
-        if (n <= 0 ) {
+        if (n <= 0) {
             System.out.println("Número inválido.");
         } else {
             int primeiro = 0, segundo = 1;
@@ -18,6 +18,7 @@ public class Fibonacci {
                 segundo = proximo;
             }
             System.out.println();
-            }
         }
-}}}
+        scanner.close();
+    }
+}
