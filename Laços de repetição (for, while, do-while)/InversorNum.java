@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class InversorNum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.prit("Digite um número inteiro: ");
+        System.out.print("Digite um número inteiro: ");
         int numero = scanner.nextInt();
 
         int invertido = 0;
@@ -20,7 +20,7 @@ public class InversorNum {
             invertido = -invertido;
         }
 
-        System.out.println("Número invertido: " + invetido);
+        System.out.println("Número invertido: " + invertido);
         scanner.close();
     }
 }
