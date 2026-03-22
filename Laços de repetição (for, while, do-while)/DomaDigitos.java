@@ -5,5 +5,17 @@ public class DomaDigitos {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite um número inteiro: ");
         int numero = scanner.nextInt();
+
+        int soma = 0;
+        int original = numero;
+        numero = Math.abs(numero); // para lidar com números negativos
+
+        while (numero > 0) {
+            soma += numero % 10;
+            numero /= 10;
+        }
+
+        System.out.println("Soma dos dígitos de " + original + " = " + soma);
+        scanner.close();
     }
 }
