@@ -15,5 +15,12 @@ public class InversorNum {
             invertido = invertido * 10 + digito;
             numero /= 10;
         }
+
+        if (original < 0) {
+            invertido = -invertido;
+        }
+
+        System.out.println("Número invertido: " + invetido);
+        scanner.close();
     }
 }
