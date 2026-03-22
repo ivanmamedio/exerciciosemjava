@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class JogoAdivinhacao {
@@ -21,7 +22,7 @@ public class JogoAdivinhacao {
             } else if (palpite > numeroSecreto) {
                 System.out.println("Menor! Tente novamente!");
             } else {
-                System.out.printçn("Parabéns! Você acertou em " + tentativas + "tentativas");
+                System.out.println("Parabéns! Você acertou em " + tentativas + " tentativas!");
             }
         } while (palpite != numeroSecreto);
 
