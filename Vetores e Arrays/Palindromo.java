@@ -8,5 +8,18 @@ public class Palindromo {
 
         boolean palindromo = true;
         int tamanho = texto.length();
+        for (int i = 0; i < tamanho / 2; i++) {
+            if (texto.charAt(i) != texto.charAt(tamanho - 1 - i)) {
+                palindromo = false;
+                break;
+            }
+        }
+
+        if (palindromo) {
+            System.out.println("É um palindromo!");
+        } else {
+            System.out.println("Não é um palindromo.");
+        }
+        scanner.close();
     }
 }
