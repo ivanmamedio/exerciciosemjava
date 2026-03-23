@@ -10,6 +10,11 @@ public class SubstCaracter {
         char antigo = scanner.next().charAt(0);
 
         System.out.print("Digite uma nova letra: ");
-        char nobo = scanner.next().charAt(0);
+        char novo = scanner.next().charAt(0);
+
+        String resultado = texto.replace(antigo, novo);
+        System.out.println("String modificada: " + resultado);
+
+        scanner.close();
     }
 }
