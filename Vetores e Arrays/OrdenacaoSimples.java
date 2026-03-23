@@ -20,5 +20,12 @@ public class OrdenacaoSimples { // Bubble Sort
                 }
             }
         }
+
+        System.out.print("Array ordenado: ");
+        for (int num : numeros) {
+            System.out.print(num + " ");
+        }
+
+        scanner.close();
     }
 }
